@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="color-scheme" content="only light"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self'; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Quietboard</title><link rel="stylesheet" href="desk.css"><link rel="stylesheet" href="meter.css"></head>
+<body><div id="app">
+<header><button id="home" aria-label="Quietboard board"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M1 1h9v9H1zm12 0h9v9h-9zM1 13h9v9H1z"/><path fill="#629042" d="M13 13h6v6h-6zm6 6h4v4h-4z"/></svg><span>Quietboard</span></button><nav id="tools"></nav></header>
+<main id="surface"><section id="studio">
+<div id="boardbar"><h1 id="turn"></h1><div id="boardtools"></div></div><div id="board" role="group" aria-label="Chessboard"><div id="squares"></div><svg id="ink" viewBox="0 0 80 80" aria-hidden="true"></svg><div id="ghost"></div></div>
+<div id="transport"></div><div id="tabs" role="tablist"></div><div id="panel"></div>
+</section><section id="page" hidden></section></main></div>
+<dialog id="dialog"><div class="dialoghead"><h2 id="dialogtitle"></h2><button id="close" aria-label="Close"></button></div><div id="dialogbody"></div></dialog>
+<div id="toast" role="status" hidden></div>
+<script src="lib/chess-rules.js"></script><script src="lib/click-chess.js"></script><script src="lib/local-stockfish.js"></script><script src="arrow-model.js"></script><script src="study.js"></script><script src="desk.js"></script><script src="library.js"></script><script src="setup.js"></script><script src="start.js"></script></body></html>

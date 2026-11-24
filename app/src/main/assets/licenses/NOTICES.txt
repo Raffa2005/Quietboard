@@ -1,0 +1,12 @@
+Quietboard — GPL-3.0-or-later. Full text: GPL-3.0.txt.
+The Quietboard board renderer, screens, interaction controller, study model, icon, layout and bundled opening guide are new to this project.
+
+Code adapted from InstinctaZero Android at commit 3963710 (GPL-3.0-or-later): indexed repertoire and unified SQLite storage, UCI worker adapter, Stockfish Downloads, Lichess phone adapter, gateway request policy, bounded response and analysis-stream parser. Where applicable Quietboard changes package names, storage, assets and application identity. The original application UI and Chessground are not included.
+
+Rules: chess.js 1.4.0 by Jeff Hlywa, BSD-2-Clause; see Chess.js-BSD-2-Clause.txt. Source: github.com/jhlywa/chess.js.
+Destination input: Click Chess trained origin ranker by Raffa2005, MIT; see lib/click-chess-LICENSE.txt and vendor/web-src/click-chess/PROVENANCE.md in the source distribution. The adapter in the generated bundle is GPL-3.0-or-later.
+Piece art: Cburnett SVG pieces by Colin M. L. Burnett, GPL-2.0-or-later, used under GPLv3. Source: lichess-org/lichobile 063167dda7119386cf36708d004d4565203d449a; upstream COPYING.md is in the source distribution. No third-party board image, icon font or typeface is bundled.
+
+Android libraries (Apache-2.0, Apache-2.0.txt): AndroidX (the Android Open Source Project), Tink (Google), Kotlin and kotlinx (JetBrains and contributors), OkHttp and Okio (Square and contributors), chesslib 1.3.7 (bhlangonijr), Apache Commons Lang (Apache Software Foundation). Gradle wrapper: Gradle Inc., Apache-2.0.
+
+Optional external download, not APK contents: Stockfish.js 19.0.1, Stockfish developers and Nathan Rugg, GPL-3.0. The lite and full single-thread workers and WASM are fetched only when requested, from github.com/nmrugg/stockfish.js/releases/tag/v19.0.1. Corresponding source and build documentation: github.com/nmrugg/stockfish.js/tree/v19.0.1.

@@ -1,0 +1,5 @@
+* text=auto
+gradlew.bat text eol=crlf
+*.jar binary
+*.bin binary
+*.png binary

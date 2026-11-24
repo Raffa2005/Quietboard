@@ -1,0 +1,11 @@
+{
+  "name": "quietboard-vendor",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build-chess-rules.mjs && node build-click-chess.mjs",
+    "check": "node build-chess-rules.mjs --check && node build-click-chess.mjs --check"
+  },
+  "devDependencies": { "esbuild": "0.25.0", "playwright": "1.62.1" },
+  "dependencies": { "chess.js": "1.4.0" }
+}
